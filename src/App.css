@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+.postTitle{
+  text-decoration: underline;
+}
+
+.box {
+  width: 80%; 
+  max-width: 600px; 
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  padding: 20px;
+  margin: 10px 0; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
+  color: #333333; 
+  font-weight: bold;
+  
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+a {
+  font-weight: bolder;
+  color:black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+h2{
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  padding: 5px;
+  text-align: center;
+}
+
+
+a:hover {
+  text-decoration: underline;
+  color: #e6683c;
+  
+}
+
+
+button {
+  background: linear-gradient(90deg, #dc2743, #bc1888);
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+  
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff; 
+  color: #000000; 
+  font-weight: bold; 
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 8px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+li:hover {
+  background-color: white; 
+  transform: translateY(-2px); 
+}
+
+
+li a {
+  text-decoration: none;
+  color: #000000; 
+}
+
+li a:hover {
+  color: #007bff; 
+}
+
